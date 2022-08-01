@@ -19,7 +19,7 @@ cat | jq -r '
       .alias,
       (.addresses | map(.addr) | join(";")),
       .color,
-      "NODE"
+      "Node"
     ])
   | .[]
   | @csv
